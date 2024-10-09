@@ -14,16 +14,16 @@ function NavBar() {
                         <a href = "#">Home</a>
                     </li>
                     <li className = " p-5 block hover:text-blue-500 hover:text-lg text-white rounded hover:scale-105 active:text-red-700">
-                        <a href = "#">Home</a>
+                        <a href = "#"> Credentials </a>
                     </li>
                     <li className = " p-5 block hover:text-blue-500 hover:text-lg text-white rounded hover:scale-105 active:text-red-700">
-                        <a href = "#">Home</a>
+                        <a href = "#">Our Team</a>
                     </li>
                     <li className = " p-5 block hover:text-blue-500 hover:text-lg text-white rounded hover:scale-105 active:text-red-700">
-                        <a href = "#">Home</a>
+                        <a href = "#aboutus">About US</a>
                     </li>
                     <li className = " p-5 block hover:text-blue-500 hover:text-lg text-white rounded hover:scale-105 active:text-red-700">
-                        <a href = "#">Home</a>
+                        <a href = "#">Contact US</a>
                     </li>
                     <div className="justify-center mt-1">
                         <button type = "button" className=" bg-blue-800 text-white rounded-lg hover:scale-110 ml-7 h-14 hover:duration-300">

@@ -3,7 +3,7 @@ import Cards from '../widgets/Cards'
 
 function AboutUS() {
   return (
-    <div className='mt-44 grid place-items-center bg-slate-900 ' >
+    <div className='mt-44 grid place-items-center bg-slate-900 ' id = "aboutus" >
         <h1 className='text-5xl font-bold text-white mt-9' >About Us</h1>
         <br/>
         <p className='font-medium text-white font-sans  ml-36 mr-36 mb-10 text-xl text-center leading-relaxed pt-5'>
