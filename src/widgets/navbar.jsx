@@ -2,7 +2,7 @@
 
 function NavBar() {
     return(
-       <div className = " max-w bg-slate-950 flex flex-wrap items-center justify-between mx-auto  h-24" >
+       <div className = " max-w bg-slate-950 flex flex-wrap items-center justify-between mx-auto  h-24 " >
             <div className="pl-24 ">
                 <a href ="#" className = "flex items-center space-x-3 rtl:space-x-reverse" >
                     <h1 className = " text-white text-3xl font-bold" >Medi Remedy</h1>

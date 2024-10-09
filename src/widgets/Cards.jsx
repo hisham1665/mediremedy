@@ -7,7 +7,7 @@ function Cards() {
             <img src='/static/card_1.jpg' className='p-4 rounded-lg border-none '/>
             <div className='p-9'>
                 <span>
-                    We provide the medicine suggestion for english medicine users 
+                    We provide the medicine suggestion for english medicine users .
                 </span>
             </div>
         </div>
