@@ -1,15 +1,17 @@
 import React from 'react'
 
 function GetStarted() {
+
   return (
     <div>
-        <button type = "button" className=" bg-teal-900 text-white rounded-3xl hover:scale-105 hover:duration-300 h-12 w-36 mt-3">
+        <button type = "button" className=" bg-teal-900 text-white rounded-3xl hover:scale-105 hover:duration-300 h-12 w-36 mt-3" >
             <span className = "font-semibold  ">
-               Get Started
+               <a href='/get-started' >  Get Started </a>
             </span>
         </button>
     </div>
   );
 }
+
 
 export default GetStarted;
