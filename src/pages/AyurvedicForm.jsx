@@ -17,8 +17,8 @@ function AyurvedicForm() {
         setLoading(true);
         try {
             const q = query(
-                collection(db, selectedCollection),
-                //where("Average_Review_%", "==", "50")
+                collection(db, "Ayurvedam"),
+                where("TYPE", "==", selectedCollection)
             );
 
             const querySnapshot = await getDocs(q);
@@ -40,7 +40,7 @@ function AyurvedicForm() {
             fetchMedicines();
         }
     };
-
+    console.log(medicines)
     return (
         <div >
             <div className='grid justify-center pl-10 h-max-96 w-max-96 text-white bg-gradient-to-b from-black slate-100  to-emerald-600  font-medium  px-5 py-2.5  pb-24 h-full'>
@@ -61,7 +61,7 @@ function AyurvedicForm() {
                                 <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" onChange={(e) => setSelectedCollection(e.target.value)} value={selectedCollection}>
                                     <option value="" disabled>Choose Your Option</option>
                                     <option value="Diabetes">Diabetes</option>
-                                    <option value="Cholestrol">Cholestrol</option>
+                                    <option value="Obesity">Cholestrol</option>
                                     <option value="Preasure">Blood Pressure</option>
                                 </select>
                             </div>

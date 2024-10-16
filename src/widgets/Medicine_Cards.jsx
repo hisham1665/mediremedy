@@ -10,8 +10,8 @@ function MedicineCards(props) {
         <div className="text-white p-10 w-full">
             <h1 className="font-bold text-2xl ">{props.Medicine_Name}</h1>
             <div className="flex flex-col ">
-                <h6 className="font-semibold text-lg">{props.Manufacturer}</h6>
-                <p className="text-base">{props.Side_effects}</p>
+                <h6 className="font-semibold text-lg">{props?.Manufacturer}</h6>
+                <p className="text-base">{props?.Side_effects}</p>
             </div>
         </div>
     </div>
