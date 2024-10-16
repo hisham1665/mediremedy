@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 10px;
+    display: flex;
+    background: #626cd6;
+    justify-content: center;
+    align-items: center;
+}
+.login_form {
+    width: 100%;
+    max-width: 435px;
+    background: #fff;
+    border-radius: 9px;
+    padding: 41px 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+form .input_box label, form .sex label{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+/* Input field styling */
+form .input_box input {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #DADAF2;
+    border-radius: 5px;
+    outline: none;
+    background: #F8F8FB;
+    font-size: 17px;
+    padding: 0px 20px;
+    margin-bottom: 25px;
+    transition: 0.2s ease;
+}
+form .input_box input:focus {
+    border-color: #626cd6;
+}
+form .input_box .password_manage {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+form .input_box .repassword{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+form .input_box {
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: #626cd6;
+    font-weight: 500;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* Login button styling */
+form button {
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #626CD6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 28px;
+    transition: 0.3s ease;
+}
+form button:hover {
+    background: #4954d0;
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
