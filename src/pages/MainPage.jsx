@@ -2,17 +2,14 @@ import Footer from "../widgets/Footer";
 import NavBar from "../widgets/navbar";
 import Search from "./Search";
 import Home from "./Home";
-import Login from "./Login";
 import Contact from "./Contact";
-import { BrowserRouter , Routes , Route, redirect, } from "react-router-dom";
-import { useContext, useState } from "react";
+import { BrowserRouter , Routes , Route } from "react-router-dom";
 import GetStartedPage from "./GetStartedPage";
-import { useAuth } from "../Context/AuthContext";
 import AyurvedicForm from "./AyurvedicForm";
 import ModernForm from "./ModernForm";
 
 export function MainPage() {
-    const { isLogged, logout } = useAuth();
+
     return (
         <div>
             <BrowserRouter>
@@ -21,7 +18,6 @@ export function MainPage() {
             </div>
                 <Routes>
                     <Route exact path="/" element={<Home/>}/>
-                    <Route path="/login" element={<Login />}/>
                     <Route path="/get-started" element= {<GetStartedPage />}   />
                     <Route path="/search" element={<Search/>} />
                     <Route path="/contact" element={<Contact />} />

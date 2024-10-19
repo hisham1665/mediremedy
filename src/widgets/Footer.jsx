@@ -23,7 +23,7 @@ function Footer() {
                 <div className='m-3 flex '>
                      <Collapsible trigger={"Edwin Vargheese"} >
                         <span className="flex">
-                            <a href=' # '><img className='h-10 w-10 m-2' src='/static/gmail_img.png'/></a>
+                            <a href='mailto:edwin223743@sahrdaya.ac.in'><img className='h-10 w-10 m-2' src='/static/gmail_img.png'/></a>
                             <a href=' # '><img className='h-10 w-10 m-2' src='/static/github_img.png'/></a>
                             <a href=' # '><img className='h-10 w-10 m-2' src='/static/linkedin_img.png'/></a>
                         </span>
@@ -32,8 +32,8 @@ function Footer() {
                 <div className='m-3 flex '>
                      <Collapsible trigger={'Irene K Anto'} >
                         <span className="flex">
-                            <a href=''><img className='h-10 w-10 m-2' src='/static/gmail_img.png'/></a>
-                            <a href=' # '><img className='h-10 w-10 m-2' src='/static/github_img.png'/></a>
+                            <a href='mailto:irene223920@sahrdaya.ac.in'><img className='h-10 w-10 m-2' src='/static/gmail_img.png'/></a>
+                            <a href='https://github.com/ireneanto'><img className='h-10 w-10 m-2' src='/static/github_img.png'/></a>
                             <a href=' # '><img className='h-10 w-10 m-2' src='/static/linkedin_img.png'/></a>
                         </span>
                      </Collapsible>

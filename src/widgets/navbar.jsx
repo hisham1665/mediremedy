@@ -8,7 +8,9 @@ function NavBar() {
        <div className = " max-w bg-slate-950 flex flex-wrap items-center justify-between mx-auto  h-24 " >
             <div className="pl-24 ">
                 <a href ="#" className = "flex items-center space-x-3 rtl:space-x-reverse" >
-                    <h1 className = " text-white text-3xl font-bold" >Medi Remedy</h1>
+                    <img src="/static/logo.png"  className = "w-16 h-12" />
+
+                    <h1 className = " text-white text-3xl font-bold" >MediRemedy</h1>
                 </a>
             </div>
             <div className="font-semibold flex flex-col p-4 md:p-0 mt-2 mr-12 text-base">
@@ -17,13 +19,10 @@ function NavBar() {
                     <Link to={'/'}> Home</Link>
                     </li>
                     <li className = " p-5 block hover:text-blue-500 hover:text-lg text-white rounded hover:scale-105 active:text-red-700">
-                        <a href = "#"> Credentials </a>
+                        <a href = "#aboutus">About US</a>
                     </li>
                     <li className = " p-5 block hover:text-blue-500 hover:text-lg text-white rounded hover:scale-105 active:text-red-700">
                         <a href = "/search">Search</a>
-                    </li>
-                    <li className = " p-5 block hover:text-blue-500 hover:text-lg text-white rounded hover:scale-105 active:text-red-700">
-                        <a href = "#aboutus">About US</a>
                     </li>
                     <li className = " p-5 block hover:text-blue-500 hover:text-lg text-white rounded hover:scale-105 active:text-red-700">
                         

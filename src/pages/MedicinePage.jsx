@@ -9,7 +9,7 @@ function MedicinePage(props) {
           <h1 className='text-white text-3xl font-semibold'> The Suggested Medicine Are Listed Below </h1>
       </div>
       <div className='max-h-fit   '>
-          {medicines.slice(0,5).map((medicine) => (
+          {medicines.sort(() => Math.random() - Math.random()).slice(0,5).map((medicine) => (
             <div className="p-10 rounded-2xl  hover:scale-105 hover:duration-500"> 
                 <MedicineCards 
                   Medicine_Name = {medicine.Medicine_Name}

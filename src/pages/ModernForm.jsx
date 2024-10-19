@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import React from 'react';
-import MedicineCards from "../widgets/Medicine_Cards";
-import { collection, query, where, getDocs } from "firebase/firestore";
+import { collection, query, getDocs } from "firebase/firestore";
 import { db } from "../firebase/firebase";
 import MedicinePage from "./MedicinePage";
+import Alright from "../widgets/Alright";
 
 function ModernForm() {
     const [medicines, setMedicines] = useState([]);
@@ -17,7 +17,6 @@ function ModernForm() {
         try {
             const q = query(
                 collection(db, selectedCollection),
-                //where("Average_Review_%", "==", "50")
             );
 
             const querySnapshot = await getDocs(q);
@@ -86,10 +85,25 @@ function ModernForm() {
         </div>
         </div>
         <div  className=" w-full bg-blue-800 justify-center grid">
-                { medicines!=null && bloodReport.length != 0 && <  MedicinePage medicines = {medicines} />  }
+                {bloodReport.length !== 0 && bloodReport < 120 && loading === false && <Alright/>}
+                {loading === true && Loading }
+                { medicines!==null && bloodReport.length !== 0 &&  bloodReport >= 120  && loading === false && <  MedicinePage medicines = {medicines} />  }
         </div>
     </div>
   )
 }
 
 export default ModernForm
+
+
+function Loading () {
+    return(
+        <div>
+            <h1 className="text-white text-2xl font-bold">
+                <center>
+                    Loading...
+                </center>
+            </h1>
+        </div>
+    );
+}

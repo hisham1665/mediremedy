@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import React from 'react';
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from "../firebase/firebase";
 import MedicinePage from "./MedicinePage";
+import Alright from "../widgets/Alright";
 
 function AyurvedicForm() {
     const [medicines, setMedicines] = useState([]);
@@ -85,7 +86,8 @@ function AyurvedicForm() {
                 </div>
             </div>
             <div  className=" w-full bg-emerald-600 justify-center grid">
-            { medicines!=null && bloodReport.length != 0 && <  MedicinePage medicines = {medicines} />  }
+            {bloodReport < 120 && <Alright/>}
+            { medicines!==null && bloodReport.length !== 0 &&  bloodReport >= 120  &&<  MedicinePage medicines = {medicines} />  }
             </div>
         </div>
   )
